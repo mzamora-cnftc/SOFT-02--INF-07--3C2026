@@ -1,0 +1,179 @@
+<div style="font-family: 'Aptos Mono', 'Consolas', 'SFMono-Regular', 'Courier New', monospace; font-size: 13pt; line-height: 1.5; color: #26313c; background-color: #ffffff; max-width: 860px; margin: 0 auto; padding: 32px 36px; border: 1px solid #dcdfe3; border-radius: 10px;">
+
+  <div style="text-align: center; margin-bottom: 28px; padding-bottom: 18px; border-bottom: 2px solid #2c3e50;">
+    <div style="font-size: 20pt; font-weight: 700; color: #2c3e50; letter-spacing: 0.5px;">Práctica de Programación</div>
+    <div style="font-size: 12pt; color: #5a6772; margin-top: 6px;">Esta práctica se puede realizar de forma individual o en parejas. No se permite más de dos personas en ningún caso.</div>
+  </div>
+
+  <div style="font-size: 15pt; font-weight: 700; color: #2c3e50; margin: 26px 0 12px 0;">Instrucciones generales para todos los ejercicios</div>
+
+  <p style="margin: 0 0 10px 0;">Para cada ejercicio, entregue los tres componentes siguientes:</p>
+
+  <ol style="margin: 0 0 8px 0; padding-left: 22px;">
+    <li style="margin-bottom: 14px;">
+      <span style="font-weight: 700; color: #0f6f5c;">Tabla Entradas / Salidas en hoja de cálculo (Excel / Calc):</span>
+      <ul style="margin: 6px 0 0 0; padding-left: 20px;">
+        <li>Identifique las celdas de Entrada, los cálculos intermedios (Proceso) y los resultados finales (Salida).</li>
+      </ul>
+    </li>
+    <li style="margin-bottom: 14px;">
+      <span style="font-weight: 700; color: #0f6f5c;">Pseudocódigo o diagrama de flujo:</span>
+      <ul style="margin: 6px 0 0 0; padding-left: 20px;">
+        <li style="margin-bottom: 6px;">Diseñe la estructura lógica utilizando bloques condicionales (<code style="background-color: #f2f2f2; padding: 1px 5px; border-radius: 3px;">if / elif / else</code>).</li>
+        <li style="margin-bottom: 6px;">Revise las expresiones booleanas: siempre que sea posible, utilice expresiones booleanas compuestas en lugar de condicionales anidados.</li>
+        <li>Si existen condiciones que requieran ifs anidados, esto está permitido.</li>
+      </ul>
+    </li>
+    <li>
+      <span style="font-weight: 700; color: #0f6f5c;">Código en Java:</span>
+      <ul style="margin: 6px 0 0 0; padding-left: 20px;">
+        <li>Programa estructurado en Java, aplicando las buenas prácticas del curso (nombres de variables en <code style="background-color: #f2f2f2; padding: 1px 5px; border-radius: 3px;">lowerCamelCase</code>, tipado claro).</li>
+      </ul>
+    </li>
+  </ol>
+  
+  <!-- EJERCICIO 1.1: Validación de Salida al Cine -->
+  <div style="font-size: 15pt; font-weight: 700; color: #2c3e50; margin: 30px 0 12px 0;">Validación de Salida al Cine</div>
+
+  <p style="margin: 0 0 12px 0;">Evalúe una toma de decisión cotidiana más sencilla mediante una estructura de decisión básica.</p>
+
+  <p style="margin: 0 0 10px 0;">Un grupo de amigos desea decidir si irá al cine el fin de semana. La salida se considera <span style="font-weight: 700; color: #0f6f5c;">aprobada</span> únicamente si se cumplen dos condiciones simultáneas:</p>
+
+  <ul style="margin: 0 0 12px 0; padding-left: 22px;">
+    <li style="margin-bottom: 6px;">Tener un presupuesto individual mayor o igual a &#8353;8.000.</li>
+    <li>Que haya boletos disponibles para la función seleccionada.</li>
+  </ul>
+
+  <p style="margin: 0 0 8px 0;">Si la salida es aprobada, el programa debe mostrar el mensaje <code style="background-color: #f2f2f2; padding: 1px 5px; border-radius: 3px;">&quot;¡Salida confirmada al cine!&quot;</code>; de lo contrario, debe mostrar <code style="background-color: #f2f2f2; padding: 1px 5px; border-radius: 3px;">&quot;Salida cancelada: se quedan en casa&quot;</code>.</p>
+
+  <!-- EJERCICIO 1.2: Planificación y Aprobación de un Paseo Familiar -->
+  <div style="font-size: 15pt; font-weight: 700; color: #2c3e50; margin: 30px 0 12px 0;">Planificación y Aprobación de un Paseo Familiar</div>
+
+  <p style="margin: 0 0 12px 0;">Una familia desea realizar un paseo de fin de semana a la playa y necesita un programa que evalúe si la salida es viable y determine la logística del viaje.</p>
+
+  <p style="margin: 0 0 10px 0;">Para que el paseo sea <span style="font-weight: 700; color: #0f6f5c;">confirmado</span>, el sistema exige que se cumplan simultáneamente dos criterios principales:</p>
+
+  <ol style="margin: 0 0 14px 0; padding-left: 22px;">
+    <li style="margin-bottom: 8px;"><span style="font-weight: 700;">Requerimientos climáticos:</span> la temperatura pronosticada debe ser igual o superior a 25&nbsp;°C, y el estado del clima debe reportarse como &quot;soleado&quot; o &quot;despejado&quot;.</li>
+    <li><span style="font-weight: 700;">Requerimientos financieros:</span> debe contarse con un presupuesto disponible mayor o igual a &#8353;50.000 en efectivo, o bien poseer una tarjeta de crédito activa para el viaje.</li>
+  </ol>
+
+  <p style="margin: 0 0 10px 0;">Si el viaje cumple con <span style="font-weight: 700; color: #0f6f5c;">ambos</span> requerimientos principales, el paseo queda confirmado. A continuación, se evalúa la disponibilidad del vehículo familiar para definir el transporte: si el carro tiene al menos el 75&#37; del tanque lleno y la revisión técnica al día, el viaje se realiza en <span style="font-weight: 700;">Vehículo Propio (Ruta Directa)</span>; de lo contrario, se reserva <span style="font-weight: 700;">Autobús de Línea (Transporte Público)</span>.</p>
+
+  <p style="margin: 0 0 8px 0;">Si el viaje <span style="font-weight: 700; color: #b3541e;">no cumple</span> con los requerimientos principales, la salida se cancela. En este escenario, el sistema analiza el motivo de la cancelación: si el pronóstico emite una alerta por &quot;tormenta tropical&quot;, o si algún integrante reporta enfermedad, se clasifica como <span style="font-weight: 700;">&quot;Cancelación Definitiva por Fuerza Mayor&quot;</span>; en caso contrario, se clasifica como <span style="font-weight: 700;">&quot;Paseo Pospuesto por Condiciones Inadecuadas&quot;</span>.</p>
+
+  <!-- EJERCICIO 2.1: VERSIÓN SENCILLA DE IF / ELSE IF -->
+  <div style="font-size: 15pt; font-weight: 700; color: #2c3e50; margin: 30px 0 12px 0;">Clasificación del Consumo Eléctrico (Estructura if / else if)</div>
+
+  <div style="font-size: 12.5pt; font-weight: 700; color: #5a6772; margin: 0 0 8px 0;">Contexto y Objetivo</div>
+  <p style="margin: 0 0 12px 0;">Antes de desarrollar el cálculo completo de la factura eléctrica, diseñe un programa que determine la categoría de consumo de un hogar según los kilovatios-hora (kWh) consumidos durante el mes. Este ejercicio debe resolverse utilizando condicionales anidados por la izquierda / escalonados (<code style="background-color: #f2f2f2; padding: 1px 5px; border-radius: 3px;">if / elif / else</code>).</p>
+
+  <div style="font-size: 12.5pt; font-weight: 700; color: #5a6772; margin: 18px 0 10px 0;">Reglas de Clasificación por Rangos</div>
+
+  <table style="width: 100%; border-collapse: collapse; margin: 0 0 18px 0; font-size: 12pt;">
+    <tr style="background-color: #2c3e50; color: #ffffff;">
+      <th style="text-align: left; padding: 8px 10px; border: 1px solid #2c3e50;">Consumo Mensual (kWh)</th>
+      <th style="text-align: left; padding: 8px 10px; border: 1px solid #2c3e50;">Categoría Asignada</th>
+    </tr>
+    <tr style="background-color: #ffffff;">
+      <td style="padding: 8px 10px; border: 1px solid #dcdfe3;">Menor o igual a 30 kWh</td>
+      <td style="padding: 8px 10px; border: 1px solid #dcdfe3;">Consumo Mínimo / Básico</td>
+    </tr>
+    <tr style="background-color: #f7f7f7;">
+      <td style="padding: 8px 10px; border: 1px solid #dcdfe3;">De 31 a 200 kWh</td>
+      <td style="padding: 8px 10px; border: 1px solid #dcdfe3;">Consumo Moderado</td>
+    </tr>
+    <tr style="background-color: #ffffff;">
+      <td style="padding: 8px 10px; border: 1px solid #dcdfe3;">De 201 a 300 kWh</td>
+      <td style="padding: 8px 10px; border: 1px solid #dcdfe3;">Consumo Alto</td>
+    </tr>
+    <tr style="background-color: #f7f7f7;">
+      <td style="padding: 8px 10px; border: 1px solid #dcdfe3;">Más de 300 kWh</td>
+      <td style="padding: 8px 10px; border: 1px solid #dcdfe3;">Consumo Excesivo</td>
+    </tr>
+  </table>
+
+  <p style="margin: 0 0 8px 0;">El programa debe solicitar el consumo mensual en kWh e imprimir la categoría correspondiente evaluando las condiciones en orden consecutivo (de menor a mayor o viceversa).</p>
+
+  <!-- EJERCICIO 2: CÁLCULO COMPLETO DEL RECIBO ELÉCTRICO -->
+  <div style="font-size: 15pt; font-weight: 700; color: #2c3e50; margin: 30px 0 12px 0;">Cálculo del Recibo Eléctrico Residencial (CNFL)</div>
+
+  <div style="font-size: 12.5pt; font-weight: 700; color: #5a6772; margin: 0 0 8px 0;">Contexto</div>
+  <p style="margin: 0 0 12px 0;">En Costa Rica, la Compañía Nacional de Fuerza y Luz (CNFL) calcula la factura eléctrica residencial según el número de kilovatios-hora (kWh) consumidos en el mes. Además del consumo de energía, la factura incluye otros rubros de ley: el Alumbrado Público, el Impuesto de Bomberos y el IVA.</p>
+
+  <div style="font-size: 12.5pt; font-weight: 700; color: #5a6772; margin: 18px 0 10px 0;">Reglas básicas de cálculo</div>
+
+  <div style="font-weight: 700; margin: 0 0 8px 0;">1. Cargo por energía (bloques escalonados)</div>
+  <p style="margin: 0 0 10px 0;">El cobro de la energía se realiza por tramos acumulativos:</p>
+
+  <table style="width: 100%; border-collapse: collapse; margin: 0 0 18px 0; font-size: 12pt;">
+    <tr style="background-color: #2c3e50; color: #ffffff;">
+      <th style="text-align: left; padding: 8px 10px; border: 1px solid #2c3e50;">Tramo</th>
+      <th style="text-align: left; padding: 8px 10px; border: 1px solid #2c3e50;">Consumo</th>
+      <th style="text-align: left; padding: 8px 10px; border: 1px solid #2c3e50;">Tarifa</th>
+    </tr>
+    <tr style="background-color: #ffffff;">
+      <td style="padding: 8px 10px; border: 1px solid #dcdfe3;">Cargo mínimo</td>
+      <td style="padding: 8px 10px; border: 1px solid #dcdfe3;">0 a 30 kWh</td>
+      <td style="padding: 8px 10px; border: 1px solid #dcdfe3;">Monto fijo de &#8353;1.744,80</td>
+    </tr>
+    <tr style="background-color: #f7f7f7;">
+      <td style="padding: 8px 10px; border: 1px solid #dcdfe3;">Bloque 2</td>
+      <td style="padding: 8px 10px; border: 1px solid #dcdfe3;">31 a 200 kWh</td>
+      <td style="padding: 8px 10px; border: 1px solid #dcdfe3;">&#8353;58,16 por kWh en el rango</td>
+    </tr>
+    <tr style="background-color: #ffffff;">
+      <td style="padding: 8px 10px; border: 1px solid #dcdfe3;">Bloque 3</td>
+      <td style="padding: 8px 10px; border: 1px solid #dcdfe3;">201 a 300 kWh</td>
+      <td style="padding: 8px 10px; border: 1px solid #dcdfe3;">&#8353;89,24 por kWh en el rango</td>
+    </tr>
+    <tr style="background-color: #f7f7f7;">
+      <td style="padding: 8px 10px; border: 1px solid #dcdfe3;">Bloque 4</td>
+      <td style="padding: 8px 10px; border: 1px solid #dcdfe3;">Más de 300 kWh</td>
+      <td style="padding: 8px 10px; border: 1px solid #dcdfe3;">&#8353;92,27 por cada kWh sobre 300</td>
+    </tr>
+  </table>
+
+  <div style="font-weight: 700; margin: 0 0 8px 0;">2. Alumbrado Público</div>
+  <p style="margin: 0 0 16px 0;">Se cobra &#8353;3,02 por cada kWh consumido, desde el primer kWh.</p>
+
+  <div style="font-weight: 700; margin: 0 0 8px 0;">3. Tributo a Bomberos (1,75&#37;)</div>
+  <ul style="margin: 0 0 16px 0; padding-left: 22px;">
+    <li style="margin-bottom: 6px;"><span style="font-weight: 700;">Exención:</span> si el consumo es de 100 kWh o menos, está exento (&#8353;0).</li>
+    <li style="margin-bottom: 6px;">Si el consumo es mayor a 100 kWh, se paga 1,75&#37; sobre el Subtotal de Energía.</li>
+    <li><span style="font-style: italic;">Límite:</span> el impuesto se aplica como máximo sobre los primeros 1750 kWh.</li>
+  </ul>
+
+  <div style="font-weight: 700; margin: 0 0 8px 0;">4. Impuesto al Valor Agregado (IVA &#8211; 13&#37;)</div>
+  <ul style="margin: 0 0 16px 0; padding-left: 22px;">
+    <li style="margin-bottom: 6px;"><span style="font-weight: 700;">Exención:</span> si el consumo es menor a 280 kWh, está exento (&#8353;0).</li>
+    <li>Si el consumo es de 280 kWh o más, se paga 13&#37; sobre la suma de: Subtotal Energía + Alumbrado Público + Tributo Bomberos.</li>
+  </ul>
+
+  <div style="font-weight: 700; margin: 0 0 8px 0;">5. Total facturado</div>
+  <p style="margin: 0 0 6px 0; padding: 12px 14px; background-color: #f2f2f2; border-radius: 4px; text-align: center; font-size: 12.5pt;">Total a pagar&nbsp;=&nbsp;Subtotal Energía&nbsp;+&nbsp;Alumbrado Público&nbsp;+&nbsp;Tributo Bomberos&nbsp;+&nbsp;Monto IVA</p>
+
+  <div style="font-weight: 700; margin: 22px 0 8px 0;">6. Formato de salida requerido</div>
+  <p style="margin: 0 0 10px 0;">La salida del programa en Python debe presentarse como un desglose detallado, estilo factura, donde cada rubro y el total queden correctamente alineados y formateados como moneda con dos decimales (<code style="background-color: #f2f2f2; padding: 1px 5px; border-radius: 3px;">:12.2f</code> o similar). Se recomienda consultar la guía de formato en <a href="https://pyformat.info/" style="color: #0f6f5c;">PyFormat (pyformat.info)</a>.</p>
+
+  <p style="margin: 0 0 16px 0; padding: 10px 14px; background-color: #eef6f4; border-left: 3px solid #0f6f5c; border-radius: 3px; font-size: 12pt;">Tip: para las líneas separadoras puede usar la repetición de cadenas de Python, por ejemplo <code style="background-color: #ffffff; padding: 1px 5px; border-radius: 3px;">'-' * 50</code> genera un string de 50 guiones seguidos.</p>
+
+  <p style="margin: 0 0 8px 0; font-weight: 700; color: #5a6772;">Ejemplo de formato de salida:</p>
+  <pre style="background-color: #f2f2f2; border: 1px solid #dcdfe3; border-radius: 5px; padding: 16px; font-family: 'Aptos Mono', 'Consolas', 'Courier New', monospace; font-size: 11.5pt; line-height: 1.5; overflow-x: auto; margin: 0 0 22px 0;">==================================================
+        DESGLOSE DE FACTURA ELÉCTRICA (CNFL)
+==================================================
+Consumo mensual:                    250.00 kWh
+--------------------------------------------------
+Subtotal Energía:              &#8353;     16,094.00
+Alumbrado Público:             &#8353;        755.00
+Tributo a Bomberos (1.75%):    &#8353;        281.65
+Impuesto IVA (13%):            &#8353;          0.00
+--------------------------------------------------
+TOTAL A PAGAR:                 &#8353;     17,130.65
+==================================================</pre>
+
+  <div style="font-size: 15pt; font-weight: 700; color: #2c3e50; margin: 30px 0 12px 0;">Entregables específicos de este punto</div>
+  <p style="margin: 0 0 6px 0; font-weight: 700;">Tabla de validación:</p>
+  <p style="margin: 0;">Calcule y verifique los montos para los siguientes consumos mensuales, en kWh: <span style="font-weight: 700; color: #0f6f5c;">25, 30, 100, 200, 250, 300, 400</span>.</p>
+
+</div>
