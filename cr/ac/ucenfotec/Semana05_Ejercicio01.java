@@ -12,11 +12,14 @@ public class Semana05_Ejercicio01 {
 
     public static void main(String[] args) {
         int kWh = 350;
+        double monto = 0;
         String etiqueta = null;
         if (kWh <= 30) {
             etiqueta = "Consumo Mínimo / Básico";
+            monto = 1744.0;
         } else if (kWh <= 200) {
             etiqueta = "Consumo Moderado";
+            monto = 1744.0 + (kWh-30) * 58.16;
         } else if (kWh <= 300) {
             etiqueta = "Consumo Alto";
         } else {

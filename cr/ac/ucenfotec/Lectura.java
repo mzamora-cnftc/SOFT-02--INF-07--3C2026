@@ -3,6 +3,9 @@ package cr.ac.ucenfotec;
 import javax.swing.JOptionPane;
 
 public class Lectura {
+    public static void main(String[] args) {
+        System.out.println("Test");
+    }
 
     /**
      * Lee un texto y valida que no esté vacío
