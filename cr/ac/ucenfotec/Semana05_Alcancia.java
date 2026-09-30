@@ -11,12 +11,14 @@ import javax.swing.JOptionPane;
  * @author admin
  */
 public class Semana05_Alcancia {
+
     public static void main(String[] args) {
         double saldo = 0, dinero = 0;
         int opcion = 0;
         String menu = "MENU\n1. Ver Saldo\n2. Depositar\n3. Retirar\n0. Salir";
-        
-        do {            
+        boolean esError = false;
+
+        do {
             opcion = Lectura.leerEntero(menu);
             switch (opcion) {
                 case 0:
@@ -30,13 +32,18 @@ public class Semana05_Alcancia {
                     saldo = saldo + dinero;
                     break;
                 case 3:
-                    dinero = Lectura.leerDouble("Digite la cantidad de dinero a retirar");
-                    if (dinero <= saldo) {
-                        saldo = saldo - dinero;
-                    } else {
-                        JOptionPane.showMessageDialog(null, "Fondos insuficientes");
-                    }
-                    
+                    esError = false;
+                    do {
+                        if (esError) {
+                            JOptionPane.showMessageDialog(null, "Fondos insuficientes");
+                        }
+                        dinero = Lectura.leerDouble("Digite la cantidad de dinero a retirar");
+                        esError = true;
+                        
+                    } while (dinero > saldo);
+
+                    saldo = saldo - dinero;
+
                     break;
                 default:
                     JOptionPane.showMessageDialog(null, "Opción no válida");
